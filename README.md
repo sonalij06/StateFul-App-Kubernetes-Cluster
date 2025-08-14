@@ -1,2 +1,24 @@
-# StateFul-App-Kubernetes-Cluster
-Deploy a stateful application (such as PostgreSQL, Redis with persistence, or Kafka) on a Kubernetes cluster, with support for auto-scaling, persistent storage, and monitoring. The purpose of this task is to demonstrate your understanding of deploying and managing stateful workloads in Kubernetes environments.
+# 🚀 Node.js + Redis Application with Kubernetes HPA
+
+This project demonstrates deploying a **Node.js application** that uses **Redis** as a backend, containerizing it with **Docker**, and deploying it to **Kubernetes** with **Horizontal Pod Autoscaler (HPA)** to scale based on CPU usage.
+
+---
+
+## 📌 Features
+- Node.js app with Redis integration
+- Docker containerization
+- Kubernetes manifests for:
+  - Deployment
+  - Service
+  - ConfigMap
+  - Horizontal Pod Autoscaler
+- Metrics Server for autoscaling
+- Load testing to trigger scaling
+- Automatic scale-down when load decreases
+
+---
+
+## ⚙️ Prerequisites
+- Docker
+- Kubernetes cluster (Minikube, kind, or cloud-based)
+- `kubectl` CLI
