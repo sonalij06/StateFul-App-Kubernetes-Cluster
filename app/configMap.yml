@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: stateful-demo
+data:
+  APP_NAME: "node-redis-app"
+  REDIS_HOST: "redis"
+  REDIS_PORT: "6379"
+

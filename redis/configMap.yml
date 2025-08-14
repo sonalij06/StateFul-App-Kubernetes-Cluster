@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: redis-config
+  namespace: stateful-demo
+data:
+  redis.conf: |
+    appendonly yes
+    appendfsync everysec
+    save 60 1000
+

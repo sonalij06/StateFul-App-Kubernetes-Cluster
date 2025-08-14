@@ -1,0 +1,16 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: node-redis-app
+  namespace: stateful-demo
+spec:
+  selector:
+    matchLabels:
+      app: node-redis-app
+  namespaceSelector:
+    matchNames: ["stateful-demo"]
+  endpoints:
+    - port: http
+      path: /metrics
+      interval: 15s
+
